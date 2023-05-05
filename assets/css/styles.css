@@ -54,7 +54,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5rem;
+
+    padding: 1.5rem 1rem;
+
     background-color: rgb(157, 245, 245);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
@@ -73,12 +75,21 @@ nav {
   }
   
   nav ul {
-    display: flex;
-    gap: 1.9rem;
+
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
   }
-  
-  nav ul li {
-    font-weight: var(--bold-font);
+
+   nav ul li {
+    margin: 8px;
+
   }
 
   .burger-menu {
@@ -87,7 +98,12 @@ nav {
     border: 0;
     background-color: transparent;
     cursor: pointer;
-    display: none;
+    display: block;
+  }
+  
+  nav ul.show {
+    transform: translateX(0);
+
   }
 
   .hero {
@@ -158,6 +174,8 @@ nav {
     background-color: var(--bg-color);
     padding: 32px 0;
     margin-top: 2rem;
+    padding-top: 100px;
+
   }
   
   .project-pic {
@@ -263,3 +281,53 @@ nav {
     border: 2px solid var(--primary-color);
     cursor: pointer;
   }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+    animation: shake 10s;
+    animation-iteration-count: infinite;
+  }
+
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+
+  .scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  .up-arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+
