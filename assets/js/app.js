@@ -23,3 +23,7 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
+
+function download(){
+    window.open("./Resume.pdf", "_blank");
+}
