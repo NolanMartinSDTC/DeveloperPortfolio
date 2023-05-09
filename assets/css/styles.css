@@ -69,25 +69,19 @@ nav {
     color: var(--primary-color);
     transition: var(--transition);
   }
+
   nav a:hover {
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
   }
-  
+ 
   nav ul {
-    position: fixed;
-    background-color: var(--bg-color);
-    flex-direction: column;
-    top: 86px;
-    left: 10%;
-    width: 80%;
-    text-align: center;
-    transform: translateX(120%);
-    transition: transform 0.5s ease-in;
+     display: flex;
+     gap: 1.9rem;
   }
 
    nav ul li {
-    margin: 8px;
+     font-weight: var(--bold-font);
   }
 
   .burger-menu {
