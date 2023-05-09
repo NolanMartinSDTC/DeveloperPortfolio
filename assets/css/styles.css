@@ -54,7 +54,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     padding: 1.5rem 3.5rem;
+
     background-color: rgb(157, 245, 245);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
@@ -73,12 +75,19 @@ nav {
   }
   
   nav ul {
-    display: flex;
-    gap: 1.9rem;
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
   }
 
    nav ul li {
-    font-weight: var(--bold-font);
+    margin: 8px;
   }
 
   .burger-menu {
@@ -93,6 +102,7 @@ nav {
   /* nav ul.show {
     transform: translateX(0);
   } */
+
 
   .hero {
     display: flex;
@@ -167,6 +177,7 @@ nav {
     padding: 32px 0;
     margin-top: 2rem;
     padding-top: 100px;
+
   }
   
   .project-pic {
@@ -408,10 +419,6 @@ nav {
 }
 
 @media screen and (max-width: 420px) {
-  /* .hero img {
-    height: 37.5rem;
-    width: 23rem;
-  } */
 
   .bio {
     width: 18.3rem;
@@ -425,3 +432,4 @@ nav {
     max-width: 17.75rem;
   }
 }
+
