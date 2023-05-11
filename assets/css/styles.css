@@ -92,11 +92,6 @@ nav {
     cursor: pointer;
     display: none;
   }
-  
-  /* nav ul.show {
-    transform: translateX(0);
-  } */
-
 
   .hero {
     display: flex;
@@ -284,7 +279,6 @@ nav {
     animation: shake 10s;
     animation-iteration-count: infinite;
   }
-
 
   @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
