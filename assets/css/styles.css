@@ -387,6 +387,11 @@ nav {
 
   .project-container {
     width: 20.875rem;
+    height: 25rem;
+  }
+  .project-container p {
+    padding: 0.1rem;
+    width: 19rem;
   }
 
   .contact-form-container {
