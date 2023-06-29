@@ -25,5 +25,5 @@ navLink.forEach((link) =>
 );
 
 function download(){
-    window.open("./Resume.pdf", "_blank");
+    window.open("./Nolan_Martin.pdf", "_blank");
 }
